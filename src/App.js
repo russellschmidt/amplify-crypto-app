@@ -49,8 +49,9 @@ function App() {
         {
           coins.map((coin, index) => (
             <div key={index}>
-              <h3>{coin.name} - {coin.symbol}</h3>
-              <h5>${coin.price_usd}</h5>
+              <h5>{coin.name} - {coin.symbol}</h5>
+              <p>Last Price: ${coin.price_usd}</p>
+              <p>Daily Change: {coin.percent_change_24h}%</p>
             </div>
           ))
         }
